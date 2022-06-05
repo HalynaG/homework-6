@@ -656,6 +656,83 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--white-color);
 }
 
+/* Підписка */
+
+.footer-form-title {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-side {
+    margin-left: auto;
+}
+
+.footer-form-input {
+    padding: 15px;
+    width: 358px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.6);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.footer-form-input:hover,
+.footer-form-input:focus {
+    border-color: var(--accent-color);
+}
+
+.footer-form-button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.footer-form-button:hover,
+.footer-form-button:focus {
+    background-color: var(--button-hover-color);
+}
+
+.footer-form-icon {
+    fill: var(--white-color);
+}
 
 /* <!--Портфоліо--> */
 .filters {
@@ -703,17 +780,7 @@ background-color: var(--accent-color);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-/*.work-btn.current-btn {
-    display: inline-block;
-        border-radius: 4px;
-        padding: 6px 22px;
-        min-width: 73px;
-        border: none;
-    
-        color: var(--white-color);
-        background-color: var(--accent-color);
-        text-align: center;
-}*/
+
 
 /* Работи */
 .gallery {
@@ -722,16 +789,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 
 }
 
-
-
-
-/*.gallery-border {
-    border: 1px solid #eeeeee;
-        padding: 20px 24px;
-        border-top: none;
-        background-color: var(--white-color);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}*/
 
 .progects-item:hover,
 .progects-item:focus {
